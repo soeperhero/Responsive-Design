@@ -1,0 +1,166 @@
+header{
+width: 100%;
+min-height: 150px;
+padding: 20px;
+
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+
+color:rgb(156, 236, 8);
+background-image: url("../Afbeeldingen/Background.jpg");
+background-size: cover;
+background-position: center;
+}
+
+
+header nav{margin-top: auto;}
+
+header h1{
+font-family: 'Pacifico', cursive;
+font-size: 48px;
+}
+
+section{
+display: flex;
+flex-wrap: nowrap;
+}
+
+footer{
+width: 100%;
+min-height: 50px;
+color: whitesmoke;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-color: lightcoral;
+}
+
+
+/* Global fix */
+* {
+  box-sizing: border-box;
+}
+
+.col-left {
+width: 25%;
+padding: 20px;
+background-color: lightgoldenrodyellow;
+}
+
+.col-right {
+width: 75%;
+
+display: flex;
+flex-direction: column;
+
+background-color: lightcyan;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .col-left,
+  .col-right {
+    width: 100%;
+  }
+}
+
+/* children of col-right */
+.col-right > div {padding: 20px;}
+
+ul{
+list-style-type:disc;
+}
+
+nav ul {
+display: flex;
+gap: 10px;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+nav a {
+display: block;
+width: 100px;
+padding: 12px;
+text-align: center;
+
+color: white;
+text-decoration: none;
+background-color: rgb(130, 114, 231);
+border: 1px solid black;
+border: none;
+font-weight: bold;
+}
+
+nav a:hover {
+background-color: rgb(19, 79, 170);
+border-style: none;
+font-weight: bold;
+}
+
+.right-block{
+margin-bottom: 20px;
+}
+
+.right-block img {
+width: 200px;
+height: auto;
+margin-left: 15px;
+margin-bottom: 10px;
+}
+
+.right-block::after {
+content: "";
+display: block;
+clear: both;
+}
+
+.image-figure {
+float: right;
+width: 200px;
+margin-left: 15px;
+margin-bottom: 10px;
+}
+
+.image-figure img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.image-figure figcaption {
+font-size: 0.85em;
+color: #555;
+text-align: center;
+margin-top: 5px;
+}
+
+/* Desktop and up */
+@media (min-width: 992px) {
+.col-left{
+background-color: lightgrey;}
+.col-right{
+background-color: darkslategray;
+color: white;
+}
+.col-left, .col-right{
+footer{
+background-color: lightgreen;
+color: darkgreen;
+}
+header h1{
+font-size: 85px;}
+header{
+color: mediumvioletred;}
+.image-figure figcaption{
+color: white;}
+}}
