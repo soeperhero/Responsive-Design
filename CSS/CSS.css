@@ -164,3 +164,28 @@ color: mediumvioletred;}
 .image-figure figcaption{
 color: white;}
 }}
+
+
+/* Mobile: make images almost full width */
+@media (max-width: 768px) {
+
+  /* Remove floating images */
+  .image-figure {
+    float: none;
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  /* Make images responsive */
+  .image-figure img,
+  .right-block img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Optional: center captions */
+  .image-figure figcaption {
+    text-align: center;
+  }
+}
